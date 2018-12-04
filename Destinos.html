@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1">	
+	<title>Castillos del mundo</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- Mi estilo -->
+	<link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
+
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top navbar-color">
+
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand logo-nav" href="index.html">
+	      	<img src="assets/img/logo_castle.png" alt="Castillos del mundo" class="logo img-responsive">
+	      </a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    <ul class="nav navbar-nav navbar-right">
+		    	<li><a href="index.html">Inicio</a></li>
+		    	<li><a href="destinos.html">Destinos</a></li>
+		        <li><a href="galeria.html">Galería</a></li>
+		        <li><a href="contacto.html">Contacto</a></li>
+		    </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+	<section>
+		<div class="container donacion-siete">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="thumbnail destinos-box2">
+						<h2 class="text-color-blue">CASTILLOS<br>DEL MUNDO</h2>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="thumbnail destinos-box-right">
+						<img src="assets/img/castillo_europa_1.jpg" alt="Castillos del mundo">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--Castillos Europa-->
+
+	<div class="barra-titulos destinos-titulos">
+			<h2 class="viaje-titulo">EUROPA</h2>
+		</div>
+
+		<section class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<img src="assets/img/castillo_europa_1.jpg" alt="Castillo de Johannisburg" class="img-responsive">
+					<h4>CASTILLO DE JOHANNISBURG</h4>
+					<p>Situado en el centro de la ciudad, con vistas al río Main y fue construido entre 1605 y 1614 por el arquitecto Georg Ridinger para Johann Schweikhard von Kronberg (1553-1626), príncipe-obispo de Maguncia (Mainz) (r. 1604-1626) y fue su segunda residencia hasta la mediatización alemana de 1803. Está construido de piedra arenisca roja, el material de construcción típico de las Spessart, las colinas cerca de Aschaffenburg.</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<img src="assets/img/castillo_europa_2.jpg" alt="Palacio de Egeskov">
+					<h4>PALACIO DE EGESKOV</h4>
+					<p>El palacio de Egeskov (en danés Egeskov Slot) es un palacio situado en el sur de la isla de Fionia, Dinamarca. El palacio es de estilo renacentista y es el mejor conservado de Europa, por lo que se refiere a palacios que se encuentren rodeados de agua. Aunque la historia de Egeskov se remonta al siglo XV, la estructura del palacio fue erigida por Frands Brockenhuus en 1554.</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<img src="assets/img/castillo_europa_3.jpg" alt="Castillo de la Mothe-Chandeniers">
+					<h4>CASTILLO DE LA MOTHE-CHANDENIERS</h4>
+					<p>El castillo fue construido en el siglo XIII en un área vinculada a los señores de la Motte de Bauçay (de Beaussais). En 2017, el proyecto «Y si adoptaramos la Mothe-Chandeniers » lanzado por Dartagnans y Adopte un château, compra el castillo con un sistema de multi-propiedad. El precio de compra del castillo fue de quinientos mil euros, suma alcanzada por financiación participativa.</p>
+				</div>
+			</div>
+
+
+		</div>
+
+	</section>
+
+	<!--API CLIMA Europa-->
+
+	<div class="container clima-castillos">
+      <h1 class="text-center">CLIMA CASTILLOS EUROPA</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <select class="form-control" id="select1">
+              <option>Seleccione una ubicación</option>
+              <option value="des1">Castillo de Johannisburg</option>
+              <option value="des2">Palacio de Egeskov</option>
+              <option value="des3">Castillo de la Mothe-Chandeniers</option>
+             </select>
+          </div>
+        </div>
+        <div class="col-md-8" hidden="true" id="escondido">
+          <h2 id="resumen"></h2>
+          <table class="table table-striped">
+            <tr>
+              <td>Sensación térmica</td>
+              <td id="sensacion"></td>
+            </tr>
+            <tr>
+              <td>Probabilidad de lluvia</td>
+              <td id="probabilidad"></td>
+            </tr>
+            <tr>
+              <td>Humedad relativa</td>
+              <td id="humedad"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!--Castillos Asia-->
+
+	<div class="barra-titulos destinos-titulos">
+			<h2 class="viaje-titulo">ASIA</h2>
+		</div>
+
+		<section class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<img src="assets/img/castillo_asia_1.jpg" alt="Castillo de Sidón" class="img-responsive">
+					<h4>CASTILLO DE SIDÓN</h4>
+					<p>El Castillo de Sidón o el Castillo del Mar de Sidón (en árabe: قلعة صيدا البحرية Kalaat Saida al-Bahriya) es uno de los sitios arqueológicos más destacados en Sidón, Líbano.1​2​ Fue construido por los cruzados en 1228 en una pequeña isla conectada al continente por una larga calzada de 80 metros. Antes el sitio fue un templo dedicado a Melkart, la versión fenicia de Hércules.</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<img src="assets/img/castillo_asia_2.jpg" alt="Palacio de Karatsu">
+					<h4>PALACIO DE KARATSU</h4>
+					<p>Castillo japonés que se encuentra en Karatsu, prefectura de Saga, en Japón. Es un castillo tipo hirayama-jō, un castillo construido sobre un terreno plano en lugar de un cerro o una montaña. Al finalizar el período Edo, el castillo de Karatsu fue el hogar del Clan Ogasawara, daimyo del Dominio Karatsu. Es también conocido como "Castillo de la grulla danzante".</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<img src="assets/img/castillo_asia_3.jpg" alt="Fortaleza de Ivángorod">
+					<h4>FORTALEZA DE IVÁNGOROD</h4>
+					<p>La fortaleza de Ivángorod (en ruso, Ивангородская крепость) es un castillo medieval ruso localizado a orillas del río Narva, en la ciudad de Ivángorod (en el óblast de Leningrado), que fue establecido por Iván III en 1492 y alrededor del cual ha crecido desde entonces la ciudad.</p>
+				</div>
+			</div>
+
+
+		</div>
+
+	</section>
+
+	<!--API CLIMA Asia-->
+
+	<div class="container clima-castillos">
+      <h1 class="text-center">CLIMA CASTILLOS ASIA</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <select class="form-control" id="select2">
+              <option>Seleccione una ubicación</option>
+              <option value="des4">Castillo de Sidón</option>
+              <option value="des5">Palacio de Karatsu</option>
+              <option value="des6">Fortaleza de Ivángorod</option>
+             </select>
+          </div>
+        </div>
+        <div class="col-md-8" hidden="true" id="escondido">
+          <h2 id="resumen"></h2>
+          <table class="table table-striped">
+            <tr>
+              <td>Sensación térmica</td>
+              <td id="sensacion"></td>
+            </tr>
+            <tr>
+              <td>Probabilidad de lluvia</td>
+              <td id="probabilidad"></td>
+            </tr>
+            <tr>
+              <td>Humedad relativa</td>
+              <td id="humedad"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+    <!-- FOOTER -->
+
+	<footer class="container footer-style">
+		<div class="row">
+			<div class="col-md-6 col-sm-6 footer-left">
+				<a href="#">
+					<i class="fab fa-facebook-f icon-black"></i>
+				</a>
+				<a href="#">
+					<i class="fab fa-twitter icon-black"></i>
+				</a>
+				<a href="#">
+					<i class="fab fa-instagram icon-black"></i>
+				</a>
+				<ul class="footer-list">
+					<li><h3>Contacto</h3></li>
+					<li>Dirección: Av. Providencia 166, Loc 10, Providencia, Región Metropolitana</li>
+					<li> Teléfono: (2) 2464 1800</li>
+					<li>Email: info@turismocastillos.cl</li>
+				</ul>
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4076.2758515990067!2d-70.60459233051623!3d-33.41946366739297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf69bc49c82f2629d!2sTurismo+Cocha!5e0!3m2!1ses!2scl!4v1543891577324" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+
+</body>
+</html>
