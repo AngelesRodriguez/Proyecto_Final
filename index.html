@@ -55,7 +55,11 @@
 	<!--HEADER-->
 
 	<header class="main">
-		<div></div>
+		<div class="thing" id="wrapper">
+			<div><img src="assets/img/castillo_europa_1.jpg" alt="slider 1"></div>
+			<div><img src="assets/img/castillo_europa_2.jpg" alt="slider 1"></div>
+			<div><img src="assets/img/castillo_europa_3.jpg" alt="slider 1"></div>
+		</div>
 		<div class="container">
 			<div class="thumbnail main-title col-sm-6 col-md-offset-7">
 				<h2 class="titulo-index">CASTILLOS<br>DEL MUNDO</h2>
@@ -138,7 +142,17 @@
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>		
 	<script src="assets/js/jquery-3.3.1.js" type="text/javascript"></script>
-	<script src="assets/js/slick.js" type="text/javascript"></script>	
+	<script src="assets/js/slick.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.thing').slick({
+				dots: true,
+				arrows: false,
+				autoplay: true,
+				autoplaySpeed: 800,
+			});
+		})
+	</script>	
 	<script>
 		$('.single-item').slick();
 	</script>
