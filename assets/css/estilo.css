@@ -23,6 +23,8 @@ nav.navbar-color{
 }
 .text-color-body{
 	color: white;
+	background-color: #2a2a2a;
+	border: none;
 }
 header.main{
 	margin-top: 60px;
@@ -157,6 +159,9 @@ header.main{
 .boton-estilo{ transition: all .2s ease-in-out; }
 .boton-estilo:hover { transform: scale(1.1); }
 
+.top-galeria-nosotros{
+	padding-top: 80px;
+}
 
 
 
