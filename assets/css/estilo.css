@@ -20,17 +20,20 @@ nav.navbar-color{
 .text-color-blue{
 	color: #76d5ab;
 	font-weight: bold;
+	font-family: 'Noto Sans TC', sans-serif;
 }
 .text-color-body{
 	color: white;
 	background-color: #2a2a2a;
 	border: none;
+	font-family: 'Noto Sans TC', sans-serif;
 }
-header.main{
+header.main.slider-header{
 	margin-top: 60px;
-	/* background-image: url(../../assets/img/castillo_europa_1.jpg) /*no-repeat center / cover transparent*/;
 	width: 100%;
-	height: 500px;
+}
+.carousel-inner.banner-carrusel-interior{
+	height: 600px;
 }
 .main-title{
 	background-color: rgba(0,0,0,0);
@@ -147,6 +150,17 @@ header.main{
 	  display: block;
 	  margin: auto;
 	}
+	@media (min-width: 700px){
+		.featured{
+			float: left;
+		}
+	}
+	@media (max-width: 699px){
+		.featured{
+			border-bottom: solid;
+			border-color: #66cc99;
+		}
+	}
 
 .gallery{
 	  margin-top:20px;
@@ -168,7 +182,16 @@ header.main{
 	margin: 0 auto;
 }
 
-
-
-
-
+/*footer{
+		background: green;
+		}
+	@media (min-width: 600px){
+		footer{
+			background: yellow;
+		}
+	}
+	@media (min-width: 800px){
+		footer{
+			background: red;
+		}
+	}
