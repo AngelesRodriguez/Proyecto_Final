@@ -75,21 +75,21 @@
 		<div class="row">
 			<div class="col-md-4">
 				<div class="thumbnail">
-					<img src="assets/img/castillo_europa_1.jpg" alt="Castillo de Johannisburg" class="img-responsive">
+					<img data-original="assets/img/castillo_europa_1.jpg" alt="Castillo de Johannisburg" class="img-responsive">
 					<h4>CASTILLO DE JOHANNISBURG</h4>
 					<p>Situado en el centro de la ciudad, con vistas al río Main y fue construido entre 1605 y 1614 por el arquitecto Georg Ridinger para Johann Schweikhard von Kronberg (1553-1626), príncipe-obispo de Maguncia (Mainz) (r. 1604-1626) y fue su segunda residencia hasta la mediatización alemana de 1803. Está construido de piedra arenisca roja, el material de construcción típico de las Spessart, las colinas cerca de Aschaffenburg.</p>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="thumbnail">
-					<img src="assets/img/castillo_europa_2.jpg" alt="Palacio de Egeskov">
+					<img data-original="assets/img/castillo_europa_2.jpg" alt="Palacio de Egeskov">
 					<h4>PALACIO DE EGESKOV</h4>
 					<p>El palacio de Egeskov (en danés Egeskov Slot) es un palacio situado en el sur de la isla de Fionia, Dinamarca. El palacio es de estilo renacentista y es el mejor conservado de Europa, por lo que se refiere a palacios que se encuentren rodeados de agua. Aunque la historia de Egeskov se remonta al siglo XV, la estructura del palacio fue erigida por Frands Brockenhuus en 1554.</p>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="thumbnail">
-					<img src="assets/img/castillo_europa_3.jpg" alt="Castillo de la Mothe-Chandeniers">
+					<img data-original="assets/img/castillo_europa_3.jpg" alt="Castillo de la Mothe-Chandeniers">
 					<h4>CASTILLO DE LA MOTHE-CHANDENIERS</h4>
 					<p>El castillo fue construido en el siglo XIII en un área vinculada a los señores de la Motte de Bauçay (de Beaussais). En 2017, el proyecto «Y si adoptaramos la Mothe-Chandeniers » lanzado por Dartagnans y Adopte un château, compra el castillo con un sistema de multi-propiedad. El precio de compra del castillo fue de quinientos mil euros, suma alcanzada por financiación participativa.</p>
 				</div>
@@ -145,21 +145,21 @@
 		<div class="row">
 			<div class="col-md-4">
 				<div class="thumbnail">
-					<img src="assets/img/castillo_asia_1.jpg" alt="Castillo de Sidón" class="img-responsive">
+					<img data-original="assets/img/castillo_asia_1.jpg" alt="Castillo de Sidón" class="img-responsive">
 					<h4>CASTILLO DE SIDÓN</h4>
 					<p>El Castillo de Sidón o el Castillo del Mar de Sidón (en árabe: قلعة صيدا البحرية Kalaat Saida al-Bahriya) es uno de los sitios arqueológicos más destacados en Sidón, Líbano.1​2​ Fue construido por los cruzados en 1228 en una pequeña isla conectada al continente por una larga calzada de 80 metros. Antes el sitio fue un templo dedicado a Melkart, la versión fenicia de Hércules.</p>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="thumbnail">
-					<img src="assets/img/castillo_asia_2.jpg" alt="Palacio de Karatsu">
+					<img data-original="assets/img/castillo_asia_2.jpg" alt="Palacio de Karatsu">
 					<h4>PALACIO DE KARATSU</h4>
 					<p>Castillo japonés que se encuentra en Karatsu, prefectura de Saga, en Japón. Es un castillo tipo hirayama-jō, un castillo construido sobre un terreno plano en lugar de un cerro o una montaña. Al finalizar el período Edo, el castillo de Karatsu fue el hogar del Clan Ogasawara, daimyo del Dominio Karatsu. Es también conocido como "Castillo de la grulla danzante".</p>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="thumbnail">
-					<img src="assets/img/castillo_asia_3.jpg" alt="Fortaleza de Ivángorod">
+					<img data-original="assets/img/castillo_asia_3.jpg" alt="Fortaleza de Ivángorod">
 					<h4>FORTALEZA DE IVÁNGOROD</h4>
 					<p>La fortaleza de Ivángorod (en ruso, Ивангородская крепость) es un castillo medieval ruso localizado a orillas del río Narva, en la ciudad de Ivángorod (en el óblast de Leningrado), que fue establecido por Iván III en 1492 y alrededor del cual ha crecido desde entonces la ciudad.</p>
 				</div>
@@ -236,6 +236,18 @@
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
+
+    <!--LAZYLOAD-->
+
+	<script src="assets/js/jquery.lazyload.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('img').lazyload({
+				threshold: 200,
+				effect: 'fadeIn',
+			})
+		})
+	</script>
 
 </body>
 </html>

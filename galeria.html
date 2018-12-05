@@ -71,17 +71,17 @@
 
 	<div class="container">
 		<div class="col-md-6">
-			<img class="featured" src="assets/img/img_galeria/castillo1.jpg">
+			<img class="featured" data-original="assets/img/img_galeria/castillo1.jpg">
 			
 		</div>
 		<div class="col-md-6">
 			<div class="gallery">
-				<img class="thumb" src="assets/img/img_galeria/castillo1.jpg">
-				<img class="thumb" src="assets/img/img_galeria/castillo2.jpg">
-				<img class="thumb" src="assets/img/img_galeria/castillo3.jpg">
-				<img class="thumb" src="assets/img/img_galeria/castillo4.jpg">
-				<img class="thumb" src="assets/img/img_galeria/castillo5.jpg">
-				<img class="thumb" src="assets/img/img_galeria/castillo6.jpg">
+				<img class="thumb" data-original="assets/img/img_galeria/castillo1.jpg">
+				<img class="thumb" data-original="assets/img/img_galeria/castillo2.jpg">
+				<img class="thumb" data-original="assets/img/img_galeria/castillo3.jpg">
+				<img class="thumb" data-original="assets/img/img_galeria/castillo4.jpg">
+				<img class="thumb" data-original="assets/img/img_galeria/castillo5.jpg">
+				<img class="thumb" data-original="assets/img/img_galeria/castillo6.jpg">
 			</div>
 		</div>
 	</div>
@@ -118,6 +118,9 @@
 			</div>
 		</div>
 	</footer>
+	
+	<!--GALERÍA - NO BORRAR -->
+
 	<script>
 		$('.featured').attr('src', 'assets/img/img_galeria/castillo9.jpg')
 			$('.thumb').on('click', function(){
@@ -125,5 +128,19 @@
 				$('.featured').attr('src', source)
 			})
 	</script>
+	<!--FIN GALERÍA-->
+
+	<!--LAZYLOAD-->
+
+	<script src="assets/js/jquery.lazyload.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('img').lazyload({
+				threshold: 200,
+				effect: 'fadeIn'
+			})
+		})
+	</script>
+	
 </body>
 </html>
